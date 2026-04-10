@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "Pulling code from GitHub..."
-                git 'https://github.com/pravinukunde7/ai-vision-website.git'
+                git branch: 'main', url: 'https://github.com/pravinukunde7/ai-vision-website.git'
             }
         }
 
