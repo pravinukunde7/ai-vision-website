@@ -65,7 +65,7 @@ docker run -d -p 3000:80 pravinukunde/ai-static-site
 
 
 👉 Application Access:
-http://<EC2PUBLICIP>:3000
+http://SERVER-IP:3000
 
 🔄 CI/CD Pipeline (Jenkins)
 
@@ -122,7 +122,7 @@ docker run -d -p 3000:80 pravinukunde/ai-static-site
 
 Access Application
 
-http://<EC2-PUBLIC-IP>:3000
+http://SERVER-IP:3000
 
 
 📊 Monitoring Setup
@@ -146,9 +146,9 @@ Access URLs
 
 Tool	URL
 
-Prometheus	http://<EC2IP>:9090
+Prometheus	http://SERVER-IP:9090
 
-Grafana	http://<EC2IP>:3001
+Grafana	http://SERVER-IP:3001
 
 
 📦 Docker Hub Image
