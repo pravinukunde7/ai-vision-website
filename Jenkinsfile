@@ -46,7 +46,7 @@ pipeline {
                 sh '''
                 docker stop ai-app || true
                 docker rm ai-app || true
-                docker run -d -p 80:80 --name ai-app $IMAGE_NAME
+                docker run -d -p 3000:80 --name ai-app $IMAGE_NAME
                 '''
             }
         }
