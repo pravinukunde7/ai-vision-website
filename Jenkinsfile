@@ -28,6 +28,13 @@ pipeline {
             }
         }
 
+        stage('Security Scan') {
+            steps {
+                echo 'Scanning Docker image for vulnerabilities...'
+                sh 'trivy image pravinukunde/ai-static-site'
+            }
+        }
+        
         stage('Push Image') {
             steps {
                 echo "Pushing image to DockerHub..."
